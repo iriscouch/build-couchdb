@@ -63,5 +63,13 @@ def detect_distro
     return [:opensuse, release]
   end
 
+  # Amazon Linux AMI
+  if File.exist? '/etc/system-release'
+    match = File.new('/etc/system-release').readline.match(/Amazon Linux AMI release/)
+    if match
+        return [:fedora, '5.5']
+    end
+  end
+
   nil
 end
