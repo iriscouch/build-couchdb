@@ -55,7 +55,7 @@ namespace :build do
   task :ubuntu_dependencies => :known_distro do
     if DISTRO[0] == :ubuntu
       # For building OTP
-      install_packages %w[ flex dctrl-tools libsctp-dev ed ]
+      install_packages %w[ flex dctrl-tools libsctp-dev ed libz-dev ]
 
       # All Ubuntu gets these.
       install_packages %w[ libxslt1-dev automake make ruby libtool g++ ]
