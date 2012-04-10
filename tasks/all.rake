@@ -66,6 +66,16 @@ namespace :build do
     end
   end
 
+  task :arch_dependencies => :known_distro do
+    if DISTRO[0] == :arch
+      # For building OTP
+      install_packages %w[ flex lksctp-tools zlib zip ]
+
+      # All Arch gets these.
+      install_packages %w[ libxslt automake make ruby libtool gcc libcap m4 openssl ]
+    end
+  end
+
   task :mac_dependencies => :known_distro do
     %w[ gcc make ].each do |dep|
       raise 'Please install Xcode from Apple' if DISTRO[0] == :osx and system("#{dep} --version > /dev/null 2> /dev/null") == false

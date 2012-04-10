@@ -12,6 +12,10 @@ def detect_distro
     return [:solaris, `uname -r`.chomp]
   end
 
+  if `uname -r`.chomp[-4..-1] == "ARCH" 
+    return [:arch, `uname -r`.chomp]
+  end
+
   # Ubuntu
   if File.exist? '/etc/lsb-release'
     info = Hash[ *File.new('/etc/lsb-release').lines.map{ |x| x.split('=').map { |y| y.chomp } }.flatten ]

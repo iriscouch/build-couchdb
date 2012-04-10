@@ -41,6 +41,11 @@ def package_dep opts
           if !installed.member?(package)
             sh "sudo pkg-get install #{package}"
           end
+        when :arch
+          installed = `pacman -Q`.split("\n")
+          if !installed.member?(package)
+            sh "sudo pacman -S #{package}"
+          end
         when :osx
           installed = `brew list`.split("\n")
           if !installed.member?(package)
