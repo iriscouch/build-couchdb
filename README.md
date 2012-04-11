@@ -96,8 +96,9 @@ Finally, install Rake from OpenCSW:
 
     sudo pkg-get install ruby rake # Also perhaps "git"
 
-On **Mac OS X**, install Xcode.
+On **Mac OS X**
 
+Install Xcode from Mac App Store. Launch XCode.app, then go to Perferences, select Downloads tab and Install Command Line Tools (You will need Apple Developer ID to download CLT).
 
 ## Getting the Code
 
