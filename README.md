@@ -150,7 +150,7 @@ It can be processed from anywhere. The idea is, when you are working, you
 realize you need couchdb, just type
 `. ~/my/stuff/code/build-couchdb/build/env.sh` or whatever and it will work.
 
-You can source the file as often as you like. Subsequent exection will not
+You can source the file as often as you like. Subsequent execution will not
 do anything.
 
     . build/env.sh
