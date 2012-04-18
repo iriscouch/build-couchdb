@@ -21,6 +21,8 @@ def detect_distro
     info = Hash[ *File.new('/etc/lsb-release').lines.map{ |x| x.split('=').map { |y| y.chomp } }.flatten ]
     if info['DISTRIB_ID'] == 'Ubuntu'
       return [:ubuntu, info['DISTRIB_RELEASE']]
+    elsif info['DISTRIB_ID'] == 'LinuxMint'
+      return [:ubuntu, info['DISTRIB_RELEASE']]
     end
   end
 
@@ -76,5 +78,5 @@ def detect_distro
     end
   end
 
-  nil
+  raise StandardError, 'could not find distribution, maybe your OS isn\'t supported'
 end
