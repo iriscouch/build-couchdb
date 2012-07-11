@@ -3,7 +3,7 @@
         url = https://git-wip-us.apache.org/repos/asf/couchdb.git
 [submodule "dependencies/otp"]
 	path = dependencies/otp
-	url = git://github.com/erlang/otp.git
+	url = https://github.com/erlang/otp.git
 [submodule "dependencies/curl"]
 	path = dependencies/curl
-	url = git://github.com/bagder/curl.git
+	url = https://github.com/bagder/curl.git
