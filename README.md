@@ -54,7 +54,7 @@ On **Debian**, first install `sudo` and add yourself to `/etc/sudoers`.
 
 On **Ubuntu and Debian**:
 
-    sudo apt-get install make gcc zlib1g-dev libssl-dev rake
+    sudo apt-get install make gcc zlib1g-dev libssl-dev rake help2man
 
 On **OpenSUSE**:
 
