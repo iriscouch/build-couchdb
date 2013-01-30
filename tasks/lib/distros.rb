@@ -60,7 +60,7 @@ def detect_distro
       raise 'Version of ruby is too old. Consider installing a more recent version'
     end
 
-    release = File.new('/etc/redhat-release').readline.match(/Scientific Linux SLF release (\d+)/)[1]
+    release = File.new('/etc/redhat-release').readline.match(/Scientific Linux release \d.\d \([A-z][a-z]+\)/)[1]
     return [:slf, release]
   end
 
