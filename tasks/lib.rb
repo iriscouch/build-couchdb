@@ -389,3 +389,6 @@ AUTOMAKE_SOURCE = "#{DEPS}/automake-1.11.2"
 AUTOCONF_213 = "#{BUILD}/bin/autoconf2.13"
 AUTOCONF_259 = "#{BUILD}/bin/autoconf2.59"
 AUTOCONF_262 = "#{BUILD}/bin/autoconf2.62"
+
+LIBTOOL        = "#{BUILD}/bin/libtool"
+LIBTOOL_SOURCE = "#{DEPS}/libtool-2.4.2"
