@@ -54,7 +54,7 @@ On **Debian**, first install `sudo` and add yourself to `/etc/sudoers`.
 
 On **Ubuntu and Debian**:
 
-    sudo apt-get install help2man make gcc zlib1g-dev libssl-dev rake help2man texinfo
+    sudo apt-get install help2man make gcc zlib1g-dev libssl-dev rake help2man texinfo flex dctrl-tools libsctp-dev libxslt1-dev libcap2-bin
 
 On **OpenSUSE**:
 
