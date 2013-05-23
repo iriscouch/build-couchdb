@@ -159,6 +159,17 @@ do anything.
 If the file is read from a script or in a pipeline, it will execute silently
 (by detecting whether it is connected to a TTY terminal).
 
+## CouchDB init.d script (for debian / ubuntu)
+
+If you want to start CouchDB with every system start, create the new init script
+
+    sudo rm /etc/init.d/couchdb
+    sudo curl --output /etc/init.d/couchdb https://raw.github.com/iriscouch/build-couchdb/init_script.sh
+    sudo chmod +x /etc/init.d/couchdb
+    
+Open the script (for example with vim `sudo vim /etc/init.d/couchdb`) and edit the lines marked with EDIT HERE
+Now you can start CouchDB with `/etc/init.d/couchdb start`
+
 ## Cheat Codes
 
 Build CouchDB supports some fancy tricks by entering cheat codes to the Rake
