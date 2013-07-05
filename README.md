@@ -54,7 +54,7 @@ On **Debian**, first install `sudo` and add yourself to `/etc/sudoers`.
 
 On **Ubuntu and Debian**:
 
-    sudo apt-get install help2man make gcc zlib1g-dev libssl-dev rake help2man texinfo flex dctrl-tools libsctp-dev libxslt1-dev libcap2-bin ed
+    sudo apt-get install help2man make gcc zlib1g-dev libssl-dev rake texinfo flex dctrl-tools libsctp-dev libxslt1-dev libcap2-bin ed
 
 On **OpenSUSE**:
 
@@ -136,7 +136,7 @@ checked out the code in your home directory, you would run:
 ## Conveniently Add CouchDB to the PATH
 
 The build process creates a small shell script, `build/env.sh`. The script
-will add the buid to your shell's `$PATH`. This will *only* affect that shell
+will add the build to your shell's `$PATH`. This will *only* affect that shell
 session, other terminals or shell sessions will not change. (This is on
 purpose, to isolate CouchDB, so that it is easy to remove, or so multiple
 versions can be installed side-by-side.)
