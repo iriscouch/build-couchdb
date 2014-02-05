@@ -16,7 +16,9 @@ Build CouchDB is developed and tested on the following operating systems:
 
 * Red Hat Enterprise Linux Server release 5.5 (Tikanga)
 * CentOS 5.5
-* Debian GNU/Linux 5.0 (Lenny)
+* Debian GNU/Linux
+  * 5.0 (Lenny)
+  * 6.0 (Squeeze)
 * Ubuntu
   * 9.10 (Karmic Koala)
   * 10.04 LTS (Lucid Lynx)
